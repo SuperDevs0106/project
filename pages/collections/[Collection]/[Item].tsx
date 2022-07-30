@@ -215,8 +215,12 @@ const Item: NextPage = () => {
                       </h1>
                       <Image width="22px" height="27px" src={PngType2} alt="" />
                       <div className="pl-14 flex justify-between">
-                        <div className="flex pr-6">
-                          <Image src={PngOmni} alt="" />
+                        <div className="flex pr-6 items-center">
+                          <img
+                            width="24px"
+                            src="/images/collections/omni.png"
+                            alt=""
+                          />
                           <h1 className="pl-1 text-[#000000] text-[14px] font-['Circular Std'] font-bold">
                             45,700.00
                           </h1>
@@ -232,8 +236,12 @@ const Item: NextPage = () => {
                       </h1>
                       <Image width="22px" height="27px" src={PngEther} alt="" />
                       <div className="pl-14 flex justify-between">
-                        <div className="flex pr-6">
-                          <Image src={PngOmni} alt="" />
+                        <div className="flex pr-6 items-center">
+                          <img
+                            width="24px"
+                            src="/images/collections/omni.png"
+                            alt=""
+                          />
                           <h1 className="pl-1 text-[#000000] text-[14px] font-['Circular Std'] font-bold">
                             45,700.00
                           </h1>
@@ -249,11 +257,10 @@ const Item: NextPage = () => {
                       </h1>
                       <Image width="22px" height="27px" src={PngType1} alt="" />
                       <div className="pl-14 flex justify-between">
-                        <div className="flex pr-6">
-                          <Image
-                            width="20px"
-                            height="20px"
-                            src={PngOmni}
+                        <div className="flex pr-6 items-center">
+                          <img
+                            width="24px"
+                            src="/images/collections/omni.png"
                             alt=""
                           />
                           <h1 className="pl-1 text-[#000000] text-[14px] font-['Circular Std'] font-bold">
@@ -271,8 +278,12 @@ const Item: NextPage = () => {
                       </h1>
                       <Image width="22px" height="27px" src={PngType2} alt="" />
                       <div className="pl-14 flex justify-between">
-                        <div className="flex pr-6">
-                          <Image src={PngOmni} alt="" />
+                        <div className="flex pr-6 items-center">
+                          <img
+                            width="24px"
+                            src="/images/collections/omni.png"
+                            alt=""
+                          />
                           <h1 className="pl-1 text-[#000000] text-[14px] font-['Circular Std'] font-bold">
                             45,700.00
                           </h1>
@@ -293,8 +304,12 @@ const Item: NextPage = () => {
                         alt=""
                       />
                       <div className="pl-14 flex justify-between">
-                        <div className="flex pr-6">
-                          <Image src={PngOmni} alt="" />
+                        <div className="flex pr-6 items-center">
+                          <img
+                            width="24px"
+                            src="/images/collections/omni.png"
+                            alt=""
+                          />
                           <h1 className="pl-1 text-[#000000] text-[14px] font-['Circular Std'] font-bold">
                             45,700.00
                           </h1>
@@ -310,8 +325,12 @@ const Item: NextPage = () => {
                       </h1>
                       <Image width="22px" height="27px" src={PngEther} alt="" />
                       <div className="pl-14 flex justify-between">
-                        <div className="flex pr-6">
-                          <Image src={PngOmni} alt="" />
+                        <div className="flex pr-6 items-center">
+                          <img
+                            width="24px"
+                            src="/images/collections/omni.png"
+                            alt=""
+                          />
                           <h1 className="pl-1 text-[#000000] text-[14px] font-['Circular Std'] font-bold">
                             45,700.00
                           </h1>
@@ -350,11 +369,11 @@ const Item: NextPage = () => {
                   </li>
                   <li
                     className={`select-none inline-block border-x-2 border-t-2 border-zince-800 text-xl px-10 py-2 rounded-t-lg ${
-                      currentTab === 'stats'
+                      currentTab === 'info'
                         ? 'bg-slate-200 text-[#1E1C21]'
                         : 'bg-slate-100'
                     }`}
-                    onClick={() => setCurrentTab('stats')}
+                    onClick={() => setCurrentTab('info')}
                   >
                     info
                   </li>
