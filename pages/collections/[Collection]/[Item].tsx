@@ -82,20 +82,18 @@ const Item: NextPage = () => {
       {nftInfo && nftInfo.nft && (
         <div className="w-full mt-40 pr-[70px] pb-[120px]">
           <div className="w-full 2xl:px-[10%] xl:px-[5%] lg:px-[2%] md:px-[2%]">
-            <div className="grid grid-cols-3 gap-80">
-              <div className="col-span-1">
+            <div className="flex">
+              <div className="w-[480px]">
                 <LazyLoad
                   className="w-[480px]"
                   placeholder={
                     <img
-                      className="w-[480px]"
                       src={'/images/omnix_logo_black_1.png'}
                       alt="nft-image"
                     />
                   }
                 >
                   <img
-                    className="w-[480px]"
                     src={
                       imageError
                         ? '/images/omnix_logo_black_1.png'
@@ -109,13 +107,13 @@ const Item: NextPage = () => {
                   />
                 </LazyLoad>
               </div>
-              <div className="w-[810px]">
+              <div className="w-[820px] ml-12">
                 <div className="px-6 py-3 bg-[#F8F9FA]">
-                  <div className="flex">
+                  <div className="flex mb-5">
                     <h1 className="text-[#1E1C21] text-[32px] font-bold">
                       {nftInfo.collection.name}
                     </h1>
-                    <div className="flex items-center ml-5">
+                    <div className="flex items-center ml-8">
                       <Image src={PngCheck} alt="" />
                     </div>
                   </div>
@@ -143,8 +141,11 @@ const Item: NextPage = () => {
                     </div> */}
                   </div>
                 </div>
-                <div className="flex px-3 py-3 mt-6 bg-[#F8F9FA]">
-                  <div className="pl-2 py-3 pr-10 border-r-2">
+                <div className="flex px-6 py-5 mt-5 bg-[#F8F9FA]">
+                  <div
+                    className="pr-[61px]"
+                    style={{ borderRight: '1px solid #ADB5BD' }}
+                  >
                     <div className="flex justify-start items-center">
                       <h1 className="text-[#1E1C21] text-[20px] font-bold">
                         owner:
@@ -153,75 +154,88 @@ const Item: NextPage = () => {
                         BOOBA.ETH
                       </h1>
                     </div>
-                    <div className="flex pt-2">
-                      <h1 className="text-[#1E1C21] text-[60px] font-['Roboto Mono'] font-normal leading-20 -tracking-4">
+                    <div className="flex mt-6">
+                      <h1
+                        style={{ letterSpacing: '7px' }}
+                        className="text-[#1E1C21] text-[60px] font-['Roboto Mono'] font-normal"
+                      >
                         69.5
                       </h1>
-                      <div className="flex items-center ml-8">
-                        <Image width="40" height="40px" src={PngEther} alt="" />
+                      <div className="flex items-center ml-6">
+                        <img
+                          style={{ maxWidth: '40px', height: '42px' }}
+                          src="/images/collections/ethereum_bg.png"
+                          alt=""
+                        />
                       </div>
                     </div>
                     <div className="">
-                      <h1 className="text-[#1E1C21] text-[16px] font-normal">
+                      <h1
+                        style={{ letterSpacing: '2px' }}
+                        className="mt-[-20px] text-[#1E1C21] text-[16px] font-normal"
+                      >
                         $175,743.58
                       </h1>
                     </div>
-                    <div className="pt-2">
-                      <div className="flex justify-start items-center mt-3">
+                    <div className="mt-5">
+                      <div className="flex justify-start items-center">
                         <h1
-                          className="flex justify-between mr-3 font-semibold w-[140px]"
-                          style={{ width: '140px' }}
+                          style={{ letterSpacing: '2px' }}
+                          className="flex justify-between mr-1 font-semibold w-[145px]"
                         >
                           Highest Bid: <span className="font-normal">45</span>
                         </h1>
                         <Image src={PngEther} width={15} height={16} alt="" />
                       </div>
-                      <div className="flex justify-start items-center mt-3">
-                        <h1 className="mr-3 font-semibold flex justify-between w-[140px]">
+                      <div className="flex justify-start items-center mt-[7px]">
+                        <h1
+                          style={{ letterSpacing: '2px' }}
+                          className="mr-1 font-semibold flex justify-between w-[145px]"
+                        >
                           Last Sale: <span className="font-normal">42</span>
                         </h1>
                         <Image src={PngEther} width={15} height={16} alt="" />
                       </div>
                     </div>
-                    <div className="pt-2">
-                      <div className="flex justify-start items-center mt-5 2xl:ml-40 xl:ml-40 lg:ml-20 md:ml-20">
+                    <div className="mt-7">
+                      <div className="flex justify-start items-center 2xl:ml-[125px] xl:ml-[125px] lg:ml-20 md:ml-20">
                         {/* <button
                           className="w-[95px] px-5 py-2 bg-[#1E1C21] text-[#FEFEFF] font-['Roboto Mono'] font-semibold text-[30px] rounded-[8px] border-2 border-[#1E1C21] z-10"
                           // onClick={handleClickOpen}
                         >
                           buy
                         </button> */}
-                        <button className="w-[95px] px-5 py-2 bg-[#ADB5BD] text-[#FFFFFF] font-['Circular Std'] font-semibold text-[18px] rounded-[4px]">
+                        <button className="w-[95px] pl-7 pr-[33px] py-[6px] bg-[#ADB5BD] text-[#FFFFFF] font-['Circular Std'] font-semibold text-[18px] rounded-[4px]">
                           bid
                         </button>
                       </div>
                     </div>
                   </div>
-                  <div className="pl-16 py-3 pr-2">
-                    <div className="flex pb-6">
-                      <h1 className="text-[#000000] font-[18px] text-[18px] font-bold pr-16">
+                  <div className="pl-14 pr-2">
+                    <div className="flex mb-[22px]">
+                      <h1 className="text-[#000000] font-[18px] text-[18px] font-bold mr-[70px]">
                         account
                       </h1>
-                      <h1 className="text-[#000000] text-[18px] font-bold pr-10">
+                      <h1 className="text-[#000000] text-[18px] font-bold mr-[40px]">
                         chain
                       </h1>
                       <h1 className="text-[#000000] text-[18px] font-bold">
                         bid
                       </h1>
                     </div>
-                    <div className="flex pb-4">
+                    <div className="flex items-center mb-4">
                       <h1 className="text-[#000000] text-[14px] font-['Circular Std'] font-bold pr-12">
                         0xdh3skfhn3...
                       </h1>
-                      <Image width="22px" height="27px" src={PngType2} alt="" />
-                      <div className="pl-14 flex justify-between">
-                        <div className="flex pr-6 items-center">
+                      <img width="22px" height="27px" src="/images/collections/type2.png" alt="" />
+                      <div className="pl-[59px] flex justify-between">
+                        <div className="flex mr-8 items-center">
                           <img
                             width="24px"
                             src="/images/collections/omni.png"
                             alt=""
                           />
-                          <h1 className="pl-1 text-[#000000] text-[14px] font-['Circular Std'] font-bold">
+                          <h1 className="ml-2 text-[#000000] text-[14px] font-['Circular Std'] font-bold">
                             45,700.00
                           </h1>
                         </div>
@@ -230,19 +244,19 @@ const Item: NextPage = () => {
                         </button>
                       </div>
                     </div>
-                    <div className="flex pb-4">
+                    <div className="flex items-center mb-4">
                       <h1 className="text-[#000000] text-[14px] font-['Circular Std'] font-bold pr-12">
                         0xdh3skfhn3...
                       </h1>
-                      <Image width="22px" height="27px" src={PngEther} alt="" />
-                      <div className="pl-14 flex justify-between">
-                        <div className="flex pr-6 items-center">
+                      <img width="22px" height="27px" src="/images/collections/type2.png" alt="" />
+                      <div className="pl-[59px] flex justify-between">
+                        <div className="flex mr-8 items-center">
                           <img
                             width="24px"
                             src="/images/collections/omni.png"
                             alt=""
                           />
-                          <h1 className="pl-1 text-[#000000] text-[14px] font-['Circular Std'] font-bold">
+                          <h1 className="ml-2 text-[#000000] text-[14px] font-['Circular Std'] font-bold">
                             45,700.00
                           </h1>
                         </div>
@@ -250,20 +264,19 @@ const Item: NextPage = () => {
                           accept
                         </button>
                       </div>
-                    </div>
-                    <div className="flex pb-4">
+                    </div><div className="flex items-center mb-4">
                       <h1 className="text-[#000000] text-[14px] font-['Circular Std'] font-bold pr-12">
                         0xdh3skfhn3...
                       </h1>
-                      <Image width="22px" height="27px" src={PngType1} alt="" />
-                      <div className="pl-14 flex justify-between">
-                        <div className="flex pr-6 items-center">
+                      <img width="22px" height="27px" src="/images/collections/type2.png" alt="" />
+                      <div className="pl-[59px] flex justify-between">
+                        <div className="flex mr-8 items-center">
                           <img
                             width="24px"
                             src="/images/collections/omni.png"
                             alt=""
                           />
-                          <h1 className="pl-1 text-[#000000] text-[14px] font-['Circular Std'] font-bold">
+                          <h1 className="ml-2 text-[#000000] text-[14px] font-['Circular Std'] font-bold">
                             45,700.00
                           </h1>
                         </div>
@@ -271,20 +284,19 @@ const Item: NextPage = () => {
                           accept
                         </button>
                       </div>
-                    </div>
-                    <div className="flex pb-4">
+                    </div><div className="flex items-center mb-4">
                       <h1 className="text-[#000000] text-[14px] font-['Circular Std'] font-bold pr-12">
                         0xdh3skfhn3...
                       </h1>
-                      <Image width="22px" height="27px" src={PngType2} alt="" />
-                      <div className="pl-14 flex justify-between">
-                        <div className="flex pr-6 items-center">
+                      <img width="22px" height="27px" src="/images/collections/type2.png" alt="" />
+                      <div className="pl-[59px] flex justify-between">
+                        <div className="flex mr-8 items-center">
                           <img
                             width="24px"
                             src="/images/collections/omni.png"
                             alt=""
                           />
-                          <h1 className="pl-1 text-[#000000] text-[14px] font-['Circular Std'] font-bold">
+                          <h1 className="ml-2 text-[#000000] text-[14px] font-['Circular Std'] font-bold">
                             45,700.00
                           </h1>
                         </div>
@@ -292,25 +304,19 @@ const Item: NextPage = () => {
                           accept
                         </button>
                       </div>
-                    </div>
-                    <div className="flex pb-4">
+                    </div><div className="flex items-center mb-4">
                       <h1 className="text-[#000000] text-[14px] font-['Circular Std'] font-bold pr-12">
                         0xdh3skfhn3...
                       </h1>
-                      <Image
-                        width="22px"
-                        height="27px"
-                        src={PngPolygon}
-                        alt=""
-                      />
-                      <div className="pl-14 flex justify-between">
-                        <div className="flex pr-6 items-center">
+                      <img width="22px" height="27px" src="/images/collections/type2.png" alt="" />
+                      <div className="pl-[59px] flex justify-between">
+                        <div className="flex mr-8 items-center">
                           <img
                             width="24px"
                             src="/images/collections/omni.png"
                             alt=""
                           />
-                          <h1 className="pl-1 text-[#000000] text-[14px] font-['Circular Std'] font-bold">
+                          <h1 className="ml-2 text-[#000000] text-[14px] font-['Circular Std'] font-bold">
                             45,700.00
                           </h1>
                         </div>
@@ -318,20 +324,19 @@ const Item: NextPage = () => {
                           accept
                         </button>
                       </div>
-                    </div>
-                    <div className="flex pb-4">
+                    </div><div className="flex items-center mb-4">
                       <h1 className="text-[#000000] text-[14px] font-['Circular Std'] font-bold pr-12">
                         0xdh3skfhn3...
                       </h1>
-                      <Image width="22px" height="27px" src={PngEther} alt="" />
-                      <div className="pl-14 flex justify-between">
-                        <div className="flex pr-6 items-center">
+                      <img width="22px" height="27px" src="/images/collections/type2.png" alt="" />
+                      <div className="pl-[59px] flex justify-between">
+                        <div className="flex mr-8 items-center">
                           <img
                             width="24px"
                             src="/images/collections/omni.png"
                             alt=""
                           />
-                          <h1 className="pl-1 text-[#000000] text-[14px] font-['Circular Std'] font-bold">
+                          <h1 className="ml-2 text-[#000000] text-[14px] font-['Circular Std'] font-bold">
                             45,700.00
                           </h1>
                         </div>
@@ -344,7 +349,7 @@ const Item: NextPage = () => {
                 </div>
               </div>
             </div>
-            <div className="w-[1320px] mt-10">
+            <div className="w-[1310px] mt-10">
               <div className="ml-10">
                 <ul className="flex flex-wrap relative justify-item-stretch text-sm font-medium text-center text-gray-500">
                   <li
