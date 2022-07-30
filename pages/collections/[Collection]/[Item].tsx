@@ -197,12 +197,12 @@ const Item: NextPage = () => {
                       </div>
                     </div>
                   </div>
-                  <div className="pl-8 py-3 pr-2">
+                  <div className="pl-16 py-3 pr-2">
                     <div className="flex pb-6">
-                      <h1 className="text-[#000000] font-[18px] text-[18px] font-bold pr-20">
+                      <h1 className="text-[#000000] font-[18px] text-[18px] font-bold pr-16">
                         account
                       </h1>
-                      <h1 className="text-[#000000] text-[18px] font-bold pr-12">
+                      <h1 className="text-[#000000] text-[18px] font-bold pr-10">
                         chain
                       </h1>
                       <h1 className="text-[#000000] text-[18px] font-bold">
@@ -210,14 +210,14 @@ const Item: NextPage = () => {
                       </h1>
                     </div>
                     <div className="flex pb-4">
-                      <h1 className="text-[#000000] text-[18px] font-['Circular Std'] font-bold pr-7">
+                      <h1 className="text-[#000000] text-[14px] font-['Circular Std'] font-bold pr-12">
                         0xdh3skfhn3...
                       </h1>
                       <Image width="22px" height="27px" src={PngType2} alt="" />
                       <div className="pl-14 flex justify-between">
                         <div className="flex pr-6">
                           <Image src={PngOmni} alt="" />
-                          <h1 className="pl-1 text-[#000000] text-[16px] font-['Circular Std'] font-bold">
+                          <h1 className="pl-1 text-[#000000] text-[14px] font-['Circular Std'] font-bold">
                             45,700.00
                           </h1>
                         </div>
@@ -227,14 +227,14 @@ const Item: NextPage = () => {
                       </div>
                     </div>
                     <div className="flex pb-4">
-                      <h1 className="text-[#000000] text-[18px] font-['Circular Std'] font-bold pr-7">
+                      <h1 className="text-[#000000] text-[14px] font-['Circular Std'] font-bold pr-12">
                         0xdh3skfhn3...
                       </h1>
                       <Image width="22px" height="27px" src={PngEther} alt="" />
                       <div className="pl-14 flex justify-between">
                         <div className="flex pr-6">
                           <Image src={PngOmni} alt="" />
-                          <h1 className="pl-1 text-[#000000] text-[16px] font-['Circular Std'] font-bold">
+                          <h1 className="pl-1 text-[#000000] text-[14px] font-['Circular Std'] font-bold">
                             45,700.00
                           </h1>
                         </div>
@@ -244,7 +244,7 @@ const Item: NextPage = () => {
                       </div>
                     </div>
                     <div className="flex pb-4">
-                      <h1 className="text-[#000000] text-[18px] font-['Circular Std'] font-bold pr-7">
+                      <h1 className="text-[#000000] text-[14px] font-['Circular Std'] font-bold pr-12">
                         0xdh3skfhn3...
                       </h1>
                       <Image width="22px" height="27px" src={PngType1} alt="" />
@@ -256,7 +256,7 @@ const Item: NextPage = () => {
                             src={PngOmni}
                             alt=""
                           />
-                          <h1 className="pl-1 text-[#000000] text-[16px] font-['Circular Std'] font-bold">
+                          <h1 className="pl-1 text-[#000000] text-[14px] font-['Circular Std'] font-bold">
                             45,700.00
                           </h1>
                         </div>
@@ -266,14 +266,14 @@ const Item: NextPage = () => {
                       </div>
                     </div>
                     <div className="flex pb-4">
-                      <h1 className="text-[#000000] text-[18px] font-['Circular Std'] font-bold pr-7">
+                      <h1 className="text-[#000000] text-[14px] font-['Circular Std'] font-bold pr-12">
                         0xdh3skfhn3...
                       </h1>
                       <Image width="22px" height="27px" src={PngType2} alt="" />
                       <div className="pl-14 flex justify-between">
                         <div className="flex pr-6">
                           <Image src={PngOmni} alt="" />
-                          <h1 className="pl-1 text-[#000000] text-[16px] font-['Circular Std'] font-bold">
+                          <h1 className="pl-1 text-[#000000] text-[14px] font-['Circular Std'] font-bold">
                             45,700.00
                           </h1>
                         </div>
@@ -283,7 +283,7 @@ const Item: NextPage = () => {
                       </div>
                     </div>
                     <div className="flex pb-4">
-                      <h1 className="text-[#000000] text-[18px] font-['Circular Std'] font-bold pr-7">
+                      <h1 className="text-[#000000] text-[14px] font-['Circular Std'] font-bold pr-12">
                         0xdh3skfhn3...
                       </h1>
                       <Image
@@ -295,7 +295,7 @@ const Item: NextPage = () => {
                       <div className="pl-14 flex justify-between">
                         <div className="flex pr-6">
                           <Image src={PngOmni} alt="" />
-                          <h1 className="pl-1 text-[#000000] text-[16px] font-['Circular Std'] font-bold">
+                          <h1 className="pl-1 text-[#000000] text-[14px] font-['Circular Std'] font-bold">
                             45,700.00
                           </h1>
                         </div>
@@ -305,14 +305,14 @@ const Item: NextPage = () => {
                       </div>
                     </div>
                     <div className="flex pb-4">
-                      <h1 className="text-[#000000] text-[18px] font-['Circular Std'] font-bold pr-7">
+                      <h1 className="text-[#000000] text-[14px] font-['Circular Std'] font-bold pr-12">
                         0xdh3skfhn3...
                       </h1>
                       <Image width="22px" height="27px" src={PngEther} alt="" />
                       <div className="pl-14 flex justify-between">
                         <div className="flex pr-6">
                           <Image src={PngOmni} alt="" />
-                          <h1 className="pl-1 text-[#000000] text-[16px] font-['Circular Std'] font-bold">
+                          <h1 className="pl-1 text-[#000000] text-[14px] font-['Circular Std'] font-bold">
                             45,700.00
                           </h1>
                         </div>
@@ -336,7 +336,7 @@ const Item: NextPage = () => {
                     }`}
                     onClick={() => setCurrentTab('items')}
                   >
-                    items
+                    properties
                   </li>
                   <li
                     className={`select-none inline-block border-x-2 border-t-2 border-zince-800 text-xl px-10 py-2 rounded-t-lg ${
@@ -347,6 +347,16 @@ const Item: NextPage = () => {
                     onClick={() => setCurrentTab('activity')}
                   >
                     activity
+                  </li>
+                  <li
+                    className={`select-none inline-block border-x-2 border-t-2 border-zince-800 text-xl px-10 py-2 rounded-t-lg ${
+                      currentTab === 'stats'
+                        ? 'bg-slate-200 text-[#1E1C21]'
+                        : 'bg-slate-100'
+                    }`}
+                    onClick={() => setCurrentTab('stats')}
+                  >
+                    info
                   </li>
                   <li
                     className={`select-none inline-block border-x-2 border-t-2 border-zince-800 text-xl px-10 py-2 rounded-t-lg ${
@@ -431,7 +441,8 @@ const Item: NextPage = () => {
                 <div
                   className="px-4 p-2 cursor-pointer"
                   style={
-                    tag === true? {background: '#E9ECEF',borderRight: '2px solid #ADB5BD',borderRadius: '8px'}: {}}
+                    tag === true? {background: '#E9ECEF',borderRight: '2px solid #ADB5BD',borderRadius: '8px',}: {}
+                  }
                 >
                   <p
                     style={{
@@ -450,7 +461,7 @@ const Item: NextPage = () => {
                 <div
                   className="px-4 p-2 cursor-pointer"
                   style={
-                    tag == false? {background: '#E9ECEF',borderLeft: '2px solid #ADB5BD',borderRadius: '8px'}: {}
+                    tag == false? {background: '#E9ECEF',borderLeft: '2px solid #ADB5BD',borderRadius: '8px',}: {}
                   }
                 >
                   <p
