@@ -165,10 +165,10 @@ const NFTGrid = (nfts:any) => {
                 className=" w-[27px] h-[20px]"
               />
             </div>
-            <select className="py-[6px] px-[56px] pr-[61px] text-[18px] text-[#6C757D] border-solid border-2 rounded-[8px] border-[#e9ecef]">
-              <option value="0">active listings</option>
-              <option value="1">1</option>
-              <option value="2">2</option>
+            <select className="py-[6px] px-[56px] pr-[61px] text-[18px] text-[#6C757D] cursor-pointer border-solid border-2 rounded-[8px] !border-[#e9ecef] ring-white">
+              <option className="!bg-[#fff] hover:!bg-white" value="0">active listings</option>
+              <option className="!bg-[#fff] hover:!bg-white" value="1">1</option>
+              <option className="!bg-[#fff] hover:!bg-white" value="2">2</option>
             </select>
           </div>
         </div>

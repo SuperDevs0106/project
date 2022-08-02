@@ -69,7 +69,7 @@ const NFTSell = () => {
               />
             </div>
           </div>
-          <div className="text-[#6C757D] font-['Roboto_Mono'] not-italic text-[14px] font-medium leading-[18px] mt-3 px-3">
+          <div className="text-[#6C757D] font-['Roboto_Mono'] not-italic text-[18px] font-medium leading-[20px] mt-3 px-3">
             {'BoredApeYachtClub'}{' #6583'}
           </div>
           <div className="my-3 px-3">
