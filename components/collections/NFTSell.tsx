@@ -84,7 +84,7 @@ const NFTSell = () => {
               </div>
               <div className="flex items-center flex-row-reverse">
                 <img src="/svgs/ethereum.svg" className="w-[16px] h-[16px]" />
-                <img src="/images/collections/mo/motor.png" className="w-[16px] h-[16px] mr-2"/>
+                <img className={showEffect === true ? 'block w-[16px] h-[16px] mr-2': 'hidden'} src="/images/collections/mo/motor.png" />
                 {/* {(chain === 'eth' || chain === 'rinkeby') && (
                   <img src="/svgs/ethereum.svg" className="w-[16px] h-[16px]" />
                 )}
