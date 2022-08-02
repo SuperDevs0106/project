@@ -20,7 +20,7 @@ type BannerProps = {
 
 const useStyles = makeStyles({
   paper: {
-    padding: '2rem',
+    // padding: '2rem',
     width: '90%',
     maxWidth: '100%',
   },
@@ -33,7 +33,7 @@ const Banner = ({ slides, blur, menu }: BannerProps): JSX.Element => {
   const [bOpenModal, setOpenModal] = React.useState(false)
   const [bShowSettingIcon, setShowSettingIcon] = React.useState(false)
 
-  const updateModal = (name: string):void => {
+  const updateModal = (name: string): void => {
     setOpenModal(false)
   }
 
@@ -43,52 +43,76 @@ const Banner = ({ slides, blur, menu }: BannerProps): JSX.Element => {
         className={classNames(
           'w-full',
           'mt-[134px]',
-          blur && menu ==='home'? 'blur-sm' : ''
+          blur && menu === 'home' ? 'blur-sm' : ''
         )}
       >
-        <div onMouseEnter={() => setShowSettingIcon(true)} onMouseLeave={() => setShowSettingIcon(false)}>
+        <div
+          onMouseEnter={() => setShowSettingIcon(true)}
+          onMouseLeave={() => setShowSettingIcon(false)}
+        >
           <Carousel slides={slides} />
         </div>
         {menu === 'home' && (
           <div className="flex justify-center w-full ">
             <div className="flex justify-between justify-center fw-60 mt-5 relative">
-              {
-                bShowSettingIcon &&
-                <div className="-top-[7rem] left-[1rem] absolute" onMouseEnter={() => setShowSettingIcon(true)} onMouseLeave={() => setShowSettingIcon(false)}>
-                  <a className="cursor-pointer" onClick={() => setOpenModal(true)}>
+              {bShowSettingIcon && (
+                <div
+                  className="-top-[7rem] left-[1rem] absolute"
+                  onMouseEnter={() => setShowSettingIcon(true)}
+                  onMouseLeave={() => setShowSettingIcon(false)}
+                >
+                  <a
+                    className="cursor-pointer"
+                    onClick={() => setOpenModal(true)}
+                  >
                     <div className="p-2 rounded-full bg-[#adb5bd]/[.5] w-[50px] h-[50px]">
-                      <Image src={Setting} alt="avatar"/>
+                      <Image src={Setting} alt="avatar" />
                     </div>
                   </a>
                 </div>
-              }
+              )}
               <div className="-top-[10rem] left-[5rem] absolute">
-                <Image 
-                  src={avatarError?'/images/default_avatar.png':(process.env.API_URL + user.avatar)} 
-                  alt="avatar" 
-                  onError={(e)=>{user.avatar&&setAvatarError(true)}} 
+                <Image
+                  src={
+                    avatarError
+                      ? '/images/default_avatar.png'
+                      : process.env.API_URL + user.avatar
+                  }
+                  alt="avatar"
+                  onError={(e) => {
+                    user.avatar && setAvatarError(true)
+                  }}
                   width={200}
                   height={200}
                 />
               </div>
-              <div className="flex flex-col ml-[20rem]">
-                <div className="text-[26px] text-slate-800">{user.username}</div>
-                <div className="text-[#6C757D] text-[16px] ml-3 mt-3">
-                  {user.bio}
+
+              <div className="flex flex-col">
+                <div className="flex items-center text-[26px] ml-[19rem] text-slate-800 ">
+                  {user.username}
+                  <p className="font-semibold">seaviva.eth</p>
+                  <p className="ml-[22px] text-[16px]">
+                    livin de life one day at a time skyrim 4 lyfe
+                  </p>
                 </div>
+                {/* <div className="text-[#6C757D] ml-[18.7rem] bg-[#f8f9fa] text-[16px]  mt-3 w-[96%] h-[75px] rounded-[8px] ">
+                  {user.bio} */}
+                {/* <div className="pl-[22px] mt-[12px]"></div> */}
+
+                {/* </div> */}
               </div>
-              <div className="flex ml-[]">
-                <Link href={user.twitter?user.twitter:''}>
+              <div className="flex items-center ml-[]">
+                <Link href={user.twitter ? user.twitter : ''}>
                   <a>
                     <div className="mr-6">
-                      <Image src={Twitter} alt='twitter' />
+                      <Image src={Twitter} alt="twitter" />
                     </div>
                   </a>
                 </Link>
-                <Link href={user.website?user.website:''}>
+                <Link href={user.website ? user.website : ''}>
                   <a>
                     <div className="mr-6">
-                      <Image src={Web} alt='website' />
+                      <Image src={Web} alt="website" />
                     </div>
                   </a>
                 </Link>
@@ -96,9 +120,15 @@ const Banner = ({ slides, blur, menu }: BannerProps): JSX.Element => {
             </div>
           </div>
         )}
-      </div>   
+      </div>
       <div className="w-full md:w-auto">
-        <Dialog open={bOpenModal} onClose={() => setOpenModal(false)} aria-labelledby='simple-dialog-title' maxWidth={'xl'} classes={{ paper: classes.paper }}>
+        <Dialog
+          open={bOpenModal}
+          onClose={() => setOpenModal(false)}
+          aria-labelledby="simple-dialog-title"
+          maxWidth={'xl'}
+          classes={{ paper: classes.paper }}
+        >
           <UserEdit updateModal={updateModal} />
         </Dialog>
       </div>

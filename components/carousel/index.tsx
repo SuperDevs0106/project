@@ -169,7 +169,6 @@ const Carousel = (props: any): JSX.Element => {
                     <i className="fa fa-arrow-right"></i>
                   </div>
                 </div>
-
                 <div className={Style.sliderSingleContent}>
                   {slider.element}
                 </div>
